@@ -1,9 +1,24 @@
-body {
-    text-align: center;
-    background-color: darkolivegreen;
-    font-family: 'Text Me One', sans-serif;
+:root {
+    --dark-color: #3A3A3A;
+    --red: #E77474;
+    --yellow: #EDED86;
+    --green: #9EEA70;
+    --blue: #718FEA;
 }
 
+body {
+    text-align: center;
+    background-color: var(--dark-color, darkgrey);
+    font-family: 'Raleway', sans-serif;
+}
+
+#quote {
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
 
 .container {
     background-color: white;
@@ -15,51 +30,32 @@ body {
 }
 
 .title {
-    color: black;
+    color: var(--dark-color, darkgrey);
     margin: 0 auto;
     padding: 0px;
     width: 400px;
+    font-weight: 600;
 }
 
-.item {
-    margin: 0px;
-    margin-bottom: 5px;
-    padding: 0px;
-
+.quote-text {
+    font-style: italic;
+    margin: 20px auto;
 }
 
-.fill {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+.quote-author {
+    margin: 10px auto;
+    color: var(--dark-color, darkgrey);
+    font-weight: 600;
 }
 
-.item-text {
-    display: inline-block;
-    width: 100%;
-}
-
-.line {
-    border-radius: 5px;
-    height: 20px;
-    padding: 0px;
-    border: 1px solid lightgrey;
-    /* box-shadow: 3px 3px 1px 0.5px rgba(0,0,0,0.58); */
-    background-color: white;
-}
-
-.solid {
-    border: 1px solid black;
-}
 
 .button {
     border: none;
     border-radius: 5px;
     background-color: lightgrey;
-    height: 60px;
+    height: 30px;
     color: white;
-    width: 200px;
+    width: 100px;
 }
 
 .button:hover {
@@ -68,16 +64,4 @@ body {
 
 .button:focus {
     outline: none;
-}
-
-.line:focus {
-    outline:none;
-}
-
-.default {
-    background-color: white;
-}
-
-.addColor {
-    background-color: blue;
 }
