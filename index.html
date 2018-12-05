@@ -3,9 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Front-End</title>
+ 
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Random Quote Generator</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+  <div class="container">
+    <h1 class="title">Random Quote Generator</h1>
+  
+    <div id="quote">
+      <div class="quote-text">
+        This will be a random quote
+      </div>
+      <div class="quote-person">
+        - Some Person
+      </div>
+    </div>
+  
+    <div id="controls">
+      <button class="generate button">Click For Quote</button>
+    </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

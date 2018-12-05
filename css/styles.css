@@ -1,0 +1,83 @@
+body {
+    text-align: center;
+    background-color: darkolivegreen;
+    font-family: 'Text Me One', sans-serif;
+}
+
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 400px;
+    height: auto;
+}
+
+.title {
+    color: black;
+    margin: 0 auto;
+    padding: 0px;
+    width: 400px;
+}
+
+.item {
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 0px;
+
+}
+
+.fill {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.item-text {
+    display: inline-block;
+    width: 100%;
+}
+
+.line {
+    border-radius: 5px;
+    height: 20px;
+    padding: 0px;
+    border: 1px solid lightgrey;
+    /* box-shadow: 3px 3px 1px 0.5px rgba(0,0,0,0.58); */
+    background-color: white;
+}
+
+.solid {
+    border: 1px solid black;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    background-color: lightgrey;
+    height: 60px;
+    color: white;
+    width: 200px;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.line:focus {
+    outline:none;
+}
+
+.default {
+    background-color: white;
+}
+
+.addColor {
+    background-color: blue;
+}
